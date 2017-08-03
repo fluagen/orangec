@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row,Col } from 'antd';
 import Header from './components/Layout/Header';
+import './App.less';
 
 class App extends Component {
   render() {

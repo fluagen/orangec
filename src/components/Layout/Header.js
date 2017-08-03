@@ -1,16 +1,24 @@
-import React, { Component } from 'react';
-import {Row, Col} from 'antd';
-import './Header.less';
-
+import React, { Component } from "react";
+import { Row, Col, Menu } from "antd";
+import styles from "./Header.less";
 
 class Header extends Component {
-  render(){
+  render() {
     return (
-      <Row>
-      <Col span={4} >1212</Col>
-      <Col span={16} className="top-header" >aaa</Col>
-      <Col span={4} />
-      </Row>
+      <div className="header-normal">
+        <div className="header-container">
+          <Row>
+            <Col>aaaa</Col>
+            <Col></Col>
+          </Row>
+
+          <Menu mode="horizontal">
+            <Menu.Item key="/users">User</Menu.Item>
+            <Menu.Item key="/app">User</Menu.Item>
+            <Menu.Item key="/topic">User</Menu.Item>
+          </Menu>
+        </div>
+      </div>
     );
   }
 }
