@@ -1,22 +1,24 @@
 import React, { Component } from "react";
-import { Row, Col, Menu } from "antd";
+import { Menu, Button } from "antd";
 import styles from "./Header.less";
 
 class Header extends Component {
   render() {
     return (
       <div className="header-normal">
-        <div className="header-container">
-          <Row>
-            <Col>aaaa</Col>
-            <Col></Col>
-          </Row>
-
-          <Menu mode="horizontal">
-            <Menu.Item key="/users">User</Menu.Item>
-            <Menu.Item key="/app">User</Menu.Item>
-            <Menu.Item key="/topic">User</Menu.Item>
-          </Menu>
+        <div className="header-navbar">
+          <div className="brand">Orange C </div>
+          <div className="header-navbar-menu">
+            <Menu mode="horizontal">
+              <Menu.Item>社区</Menu.Item>
+              <Menu.Item>话题</Menu.Item>
+              <Menu.Item>投票</Menu.Item>
+            </Menu>
+          </div>
+          <div className="header-navbar-right">
+            <Button size="large">注册</Button>
+            <Button size="large">登录</Button>
+          </div>
         </div>
       </div>
     );

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row,Col } from 'antd';
 import Header from './components/Layout/Header';
+import Login from './components/Login';
 import './App.less';
 
 class App extends Component {
@@ -8,6 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <Login />
       </div>
     );
   }

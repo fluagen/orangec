@@ -1,4 +1,4 @@
-@import "./style/default";
+@import "./style/variables";
 
 .header-normal {
   margin-bottom: 20px;
@@ -8,10 +8,27 @@
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-.header-container {
+.header-navbar {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  line-height: 46px;
+  display: flex;
+
+  .brand {
+    margin-right: 15px;
+  }
+  .header-navbar-menu {
+    flex: 1;
+  }
+  .header-navbar-right {
+    button {
+      margin: 0 5px;
+      border-color: @yellow-6;
+      color: @yellow-6;
+      font-weight: 400;
+    }
+  }
 
   @media (min-width: @screen-sm-min) {
     width: @screen-sm;
@@ -21,11 +38,5 @@
   }
   @media (min-width: @screen-lg-min) {
     width: @screen-lg;
-  }
-
-  display: flex;
-  .brand {
-  }
-  .menu {
   }
 }
