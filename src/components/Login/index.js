@@ -7,7 +7,7 @@ const FormItem = Form.Item;
 class Login extends Component {
   render() {
     return (
-      <Form className="login-form" layout="horizontal" horizontal="true" >
+      <Form className="login-form" layout="horizontal">
         <FormItem label="用户名">
           <Input
             placeholder="字母、数字，不少于5位"

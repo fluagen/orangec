@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Menu, Button } from "antd";
-import styles from "./Header.less";
+import "./Header.less";
 
 class Header extends Component {
   render() {
