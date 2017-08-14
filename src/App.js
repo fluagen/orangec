@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Router, Route, IndexRedirect } from "react-router";
 import Header from "./components/Layout/Header";
-import Main from "./components/Layout/Main";
 import Footer from "./components/Layout/Footer";
 import "./App.less";
 
